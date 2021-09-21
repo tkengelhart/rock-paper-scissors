@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.user-choice {
+  color: green;
+}
+.computer-choice {
+  color: blue;
+}
+.result {
+  color: red;
+}

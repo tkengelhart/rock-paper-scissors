@@ -1,3 +1,4 @@
+import Style from 'Style.css';
 import { useEffect, useState } from 'react';
 
 const App = () => {
@@ -41,11 +42,11 @@ const App = () => {
   }, [computerChoice, userChoice])
   return (
     <div>
-      <h1>User choice is: {userChoice}</h1>
-      <h1>Computer choice is: {computerChoice}</h1>
+      <h1 className="user-choice">User choice is: {userChoice}</h1>
+      <h1 className="computer-choice">Computer choice is: {computerChoice}</h1>
       {choices.map((choice, index) =>
         <button key={index} onClick={() => handleClick(choice)}>{choice}</button>)}
-      <h1>{result}</h1>
+      <h1 className="result">{result}</h1>
     </div>
   );
 
