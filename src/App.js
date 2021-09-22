@@ -1,4 +1,4 @@
-import Style from 'Style.css';
+import './app.css'
 import { useEffect, useState } from 'react';
 
 const App = () => {
